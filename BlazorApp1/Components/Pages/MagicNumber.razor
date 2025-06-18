@@ -1,0 +1,16 @@
+﻿@page "/magicNumber"
+
+<h3>MagicNumber</h3>
+
+<p>Guess the number between @MagicNumberMinValue and @MagicNumberMaxValue !</p>
+
+<input type="number" min="@MagicNumberMinValue" max="@MagicNumberMaxValue" @bind="_userInputValue"/>
+ 
+<button class="btn btn-primary" @onclick="() => CheckResponse()">Guess !</button>
+<div>
+    @for (int i = 0; i < Lifes; i++)
+    {
+        <span>❤️</span>
+    }
+</div>
+<p>@_responseToUser</p>
