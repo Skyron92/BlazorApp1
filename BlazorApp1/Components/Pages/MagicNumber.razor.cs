@@ -28,6 +28,7 @@ public partial class MagicNumber
         }
         else {
             Lifes--;
+            _responseToUser = $"{_userInputValue} is {(_userInputValue<_magicNumberValue?"lesser":"greater")} than the magic number.";
             if(Lifes <=0) Lose();
         }
     }
