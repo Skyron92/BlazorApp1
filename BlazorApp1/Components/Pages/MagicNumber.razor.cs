@@ -5,7 +5,7 @@ public partial class MagicNumber
     private int _userInputValue = 0;
     private int _magicNumberValue = 0;
     private const int MagicNumberMinValue = 0;
-    private const int MagicNumberMaxValue = 20;
+    private const int MagicNumberMaxValue = 30;
 
     private int _lifes = 5;
 
