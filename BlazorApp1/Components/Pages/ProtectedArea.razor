@@ -1,0 +1,20 @@
+﻿@page "/protected"
+@rendermode InteractiveServer
+@inject ILogger<ProtectedArea> Logger
+
+<h3>ProtectedArea</h3>
+
+@if (_userInput != Password) {
+    <div>
+        <input type="password" @oninput="ChangePassword"/>
+    </div>
+    <p>@_passwordResponse</p>
+}
+else {
+    <div>
+        <h4>Welcome !</h4>
+        <div>
+            
+        </div>
+    </div>
+}
