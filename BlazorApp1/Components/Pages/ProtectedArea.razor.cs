@@ -8,8 +8,18 @@ public partial class ProtectedArea
     private const string Password = "WxB9!4";
     private string _passwordResponse = "";
 
+    private string PasswordResponse {
+        set {
+            if (value == "") LoadFakeStore();
+            _passwordResponse = value;
+        }
+    }
     private void ChangePassword(ChangeEventArgs e) {
         _userInput = e.Value?.ToString() ?? string.Empty;
-        _passwordResponse = _userInput == Password ? "" : "Invalid password.";
+        PasswordResponse = _userInput == Password ? "" : "Invalid password.";
+    }
+
+    private void LoadFakeStore() {
+        NavigationManager.NavigateTo("/FakeStore");
     }
 }

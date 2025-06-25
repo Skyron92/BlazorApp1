@@ -1,0 +1,25 @@
+﻿@page "/FakeStore"
+@rendermode InteractiveServer
+
+<h3>FakeStore</h3>
+
+<button class="btn btn-primary" @onclick="OnClick">Add new product</button>
+
+@if (_isLoading) {
+    <span>Loading products...</span>
+}
+else {
+    <div>
+        <span>@counter</span>
+        <span>@_products.Count products found.</span>
+        @foreach (var product in _products) {
+            <div style="border: solid #0a53be">
+                <p>
+                    <span>Id: @product.Id</span> -
+                    <span>Name: @product.Title</span> -
+                    <span>Price: @product.Price€</span>
+                </p>
+            </div>
+        }
+    </div>
+}
