@@ -1,0 +1,58 @@
+[
+  {
+    "Id": 1,
+    "Title": "Bouteille d\u0027eau",
+    "Price": 0.99,
+    "Description": "Super fra\u00EEche, comme on aime !",
+    "Category": "Boisson",
+    "Image": ""
+  },
+  {
+    "Id": 2,
+    "Title": "Sac de pommes",
+    "Price": 2.49,
+    "Description": "Super bio, super bonnes !",
+    "Category": "Fruit",
+    "Image": ""
+  },
+  {
+    "Id": 3,
+    "Title": "Test",
+    "Price": 7.49,
+    "Description": "A test product",
+    "Category": "category",
+    "Image": ""
+  },
+  {
+    "Id": 4,
+    "Title": "Test",
+    "Price": 7.49,
+    "Description": "A test product",
+    "Category": "category",
+    "Image": ""
+  },
+  {
+    "Id": 5,
+    "Title": "Test",
+    "Price": 0.3404309,
+    "Description": "A test product",
+    "Category": "category",
+    "Image": ""
+  },
+  {
+    "Id": 6,
+    "Title": "Test",
+    "Price": 1.1327758,
+    "Description": "A test product",
+    "Category": "category",
+    "Image": ""
+  },
+  {
+    "Id": 7,
+    "Title": "Test",
+    "Price": 5.6929985,
+    "Description": "A test product",
+    "Category": "category",
+    "Image": ""
+  }
+]
