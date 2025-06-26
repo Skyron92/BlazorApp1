@@ -4,7 +4,9 @@
 <h3>FakeStore</h3>
 
 <button class="btn btn-primary" @onclick="OnClick">Add new product</button>
-
+<input type="number" @bind="_selectedId"/>
+<button class="btn btn-primary" @onclick="OnClickDelete">Delete selected product</button>
+<span>@_userResponse</span>
 @if (_isLoading) {
     <span>Loading products...</span>
 }

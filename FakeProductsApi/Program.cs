@@ -66,30 +66,25 @@ app.MapPut("/products/{id:int}", (int id, Product updated) =>
     if (existing is null)
         return Results.NotFound();
 
-    existing.Title       = updated.Title;
-    existing.Price       = updated.Price;
-    existing.Description = updated.Description;
-    existing.Category    = updated.Category;
-    existing.Image       = updated.Image;
+    existing = updated;
     SaveProducts(products);
     return Results.NoContent();
 });
 
-app.MapDelete("/products/{id:int}", (int id) =>
-{
+app.MapDelete("/products/{id:int}", (int id) => {
     Product? existing = products.FirstOrDefault(p => p.Id == id);
     if (existing is null)
         return Results.NotFound();
 
     products.Remove(existing);
     SaveProducts(products);
-    return Results.NoContent();
+    return Results.NoContent(); 
 });
 
 app.Run();
 
 public record Product {
-    public required int Id { get; init; }
+    public required int Id { get; set; }
     public required string Title { get; init; }
     public required decimal Price { get; init; }
     public required string Description { get; init; }

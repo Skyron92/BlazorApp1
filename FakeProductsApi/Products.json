@@ -24,33 +24,9 @@
     "Image": ""
   },
   {
-    "Id": 4,
+    "Id": 16,
     "Title": "Test",
-    "Price": 7.49,
-    "Description": "A test product",
-    "Category": "category",
-    "Image": ""
-  },
-  {
-    "Id": 5,
-    "Title": "Test",
-    "Price": 0.3404309,
-    "Description": "A test product",
-    "Category": "category",
-    "Image": ""
-  },
-  {
-    "Id": 6,
-    "Title": "Test",
-    "Price": 1.1327758,
-    "Description": "A test product",
-    "Category": "category",
-    "Image": ""
-  },
-  {
-    "Id": 7,
-    "Title": "Test",
-    "Price": 5.6929985,
+    "Price": 2.5686466,
     "Description": "A test product",
     "Category": "category",
     "Image": ""
